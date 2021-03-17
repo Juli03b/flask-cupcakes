@@ -1,0 +1,8 @@
+.capitalize{
+    text-transform: capitalize;
+}
+.list-group {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2em;
+}

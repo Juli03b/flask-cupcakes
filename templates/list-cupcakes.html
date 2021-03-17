@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1 class="display-1">Cupcakes</h1>
+<div id="cupcakes-div" class="my-2"></div>
+<form action="" class="col-3 my-3" method="POST" id="cupcake-form">
+    <label for="flavor" class="form-label">Cupcake flavor:</label>
+        <input type="text" name="flavor" class="form-control" placeholder="Enter a flavor" required>
+    <label for="size" class="form-label">Cupcake Size:</label>
+        <input type="text" name="size" class="form-control" placeholder="Enter the size" required>
+    <label for="rating" class="form-label">Cupcake rating:</label>
+        <input type="number" name="rating" class="form-control" placeholder="Enter a rating" required>
+    <label for="image" class="form-label">Cupcake image url:</label>
+        <input type="text" name="image" class="form-control" placeholder="Enter an image url">
+    <button class="btn btn-dark my-3">Submit Cupcake!</button>
+</form>
+{% endblock %}
+{% block scripts %}
+<script src="../static/list-cupcakes.js"></script>
+{% endblock %}
